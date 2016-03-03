@@ -11,11 +11,10 @@ import util.DateUtil;
 import application.MainApp;
 import application.model.Customer;
 
-
 // Must be placed within the view package else the SceneBuilder won't find it
 
 public class CustomerOverviewController {
-	  @FXML
+	    @FXML
 	    private TableView<Customer> customerTable;
 	    @FXML
 	    private TableColumn<Customer, String> idColumn;
@@ -83,8 +82,7 @@ public class CustomerOverviewController {
 	            creditLabel.setText(Float.toString(customer.getCredit()));
 	            statusLabel.setText(customer.getStatus());
 
-	            // TODO: We need a way to convert the birthday into a String!
-	            // birthdayLabel.setText(...);
+	            
 	        } else {
 	            // Person is null, remove all the text.
 	        	customerIDLabel.setText("");

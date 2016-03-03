@@ -9,6 +9,20 @@
     -fx-opacity: 0.6;
 }
 
+.label-Title {
+	-fx-font-size: 28pt;
+    -fx-font-family: "Segoe UI Bold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-Title-logon {
+	-fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Bold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
 .label-bright {
     -fx-font-size: 11pt;
     -fx-font-family: "Segoe UI Semibold";

@@ -1,6 +1,5 @@
 package application.model;
 
-
 import java.time.LocalDate;
 
 import javafx.beans.property.IntegerProperty;
@@ -12,6 +11,11 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
+/**
+ * Data for the gui is stored as a property and needs getters that return a
+ * property and the value within the property, also a setter for each. Each model
+ * class follows the same structure.
+**/
 public class Customer {
 
 	private final IntegerProperty customerID;
@@ -25,17 +29,11 @@ public class Customer {
 
 
     // default constructor
-
     public Customer() {
         this(0, null);
     }
 
-    /**
-     * Constructor with some initial data.
-     *
-     * @param firstName
-     * @param lastName
-     */
+    // constructor with initial data
     public Customer(int id, String fullName) {
         this.customerID = new SimpleIntegerProperty(id);
         this.fullName = new SimpleStringProperty(fullName);
@@ -51,6 +49,7 @@ public class Customer {
 
     }
 
+    // id //
 	public int getCustomerID() {
 		return customerID.get();
 	}
@@ -63,6 +62,7 @@ public class Customer {
 		return customerID;
 	}
 
+	// full name //
 	public String getFullName() {
 		return fullName.get();
 	}
@@ -75,6 +75,7 @@ public class Customer {
 		return fullName;
 	}
 
+	// date of birth //
 	public LocalDate getBirthday() {
 		return birthday.get();
 	}
@@ -87,6 +88,7 @@ public class Customer {
 		return birthday;
 	}
 
+	// home telephone number //
 	public String getHomeTeleNo() {
 		return homeTeleNo.get();
 	}
@@ -99,6 +101,7 @@ public class Customer {
 		return homeTeleNo;
 	}
 
+	// mobile telephone number //
 	public String getMobileTeleNo() {
 		return mobileTeleNo.get();
 	}
@@ -111,6 +114,7 @@ public class Customer {
 		return mobileTeleNo;
 	}
 
+	// credit //
 	public float getCredit() {
 		return credit.get();
 	}
@@ -123,6 +127,7 @@ public class Customer {
 		return credit;
 	}
 
+	// status //
 	public String getStatus() {
 		return status.get();
 	}

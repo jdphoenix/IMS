@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Reflection?>
 <?import javafx.scene.layout.BorderPane?>
 
 <BorderPane prefHeight="440.0" prefWidth="840.0" stylesheets="@DynaTheme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
@@ -25,6 +26,9 @@
             </items>
           </Menu>
         </menus>
+         <effect>
+            <Reflection />
+         </effect>
       </MenuBar>
    </top>
 </BorderPane>
