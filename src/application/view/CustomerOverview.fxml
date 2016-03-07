@@ -62,9 +62,10 @@
                         <Label fx:id="statusLabel" styleClass="label-bright" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
                      </children>
                   </GridPane>
-                  <Button layoutX="362.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleDeletePerson" prefHeight="33.0" prefWidth="90.0" text="Delete" />
-                  <Button layoutX="251.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleEditCustomer" prefHeight="33.0" prefWidth="90.0" text="Edit..." />
-                  <Button layoutX="139.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleNewCustomer" prefHeight="33.0" prefWidth="90.0" text="New..." />
+                  <Button layoutX="235.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleDeletePerson" prefHeight="33.0" prefWidth="90.0" text="Delete" />
+                  <Button layoutX="128.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleEditCustomer" prefHeight="33.0" prefWidth="90.0" text="Edit..." />
+                  <Button layoutX="17.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleNewCustomer" prefHeight="33.0" prefWidth="90.0" text="New..." />
+                  <Button layoutX="433.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
                </children>
             </AnchorPane>
         </items>

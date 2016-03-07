@@ -37,9 +37,8 @@ public class PortalViewController {
 		System.out.println(user);
 		System.out.println(pass);
 
-		if(!validateLogin()) {
-			errorMsg.setText(user + pass);
-			
+		if(validateLogin()) {
+			selectView(2);
 
 		} else {
 			errorMsg.setText("Invalid username or password");
@@ -47,10 +46,42 @@ public class PortalViewController {
 	}
 
 	private boolean validateLogin() {
+		// retrive the username and password combos for login
+		// compare them with the entries in the text/password fields
+		// return true if they match
+		// return false if they do not match
 
-
-		return false;
+		return true;
 	}
+
+	// for now i am enumerating the roles from 1 to 4
+	private boolean selectView(int role) {
+
+		if(role < 1 || role > 4) {
+			return false;
+		} else {
+
+			switch(role) {
+				case 1:
+					mainApp.showGenericOverview();
+					break;
+				case 2:
+					mainApp.showSalesOverview();
+					break;
+				case 3:
+					mainApp.showGenericOverview();
+					break;
+				case 4:
+					mainApp.showGenericOverview();
+					break;
+				default:
+					return false;
+			}
+		}
+
+		return true;
+	}
+
 	 /**
      * Is called by the main application to give a reference back to itself.
      *

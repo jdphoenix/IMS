@@ -12,9 +12,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane blendMode="MULTIPLY" prefHeight="200.0" prefWidth="400.0" styleClass="background" stylesheets="@DynaTheme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.PortalViewController">
+<AnchorPane blendMode="MULTIPLY" prefHeight="400.0" prefWidth="800.0" styleClass="background" stylesheets="@DynaTheme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.PortalViewController">
    <children>
-      <GridPane layoutX="69.0" layoutY="69.0" prefHeight="64.0" prefWidth="320.0">
+      <GridPane layoutX="268.0" layoutY="129.0" prefHeight="64.0" prefWidth="320.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="91.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="232.0" minWidth="10.0" prefWidth="229.0" />
@@ -34,8 +34,8 @@
             </PasswordField>
          </children>
       </GridPane>
-      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="33.0" prefWidth="375.0" styleClass="label-Title-logon" text="Inventory Management System" />
-      <Button layoutX="255.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="33.0" prefWidth="90.0" text="Login">
+      <Label alignment="CENTER" layoutX="213.0" layoutY="74.0" prefHeight="33.0" prefWidth="375.0" styleClass="label-Title-logon" text="Inventory Management System" />
+      <Button layoutX="454.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="33.0" prefWidth="90.0" text="Login">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -43,6 +43,6 @@
             <Reflection />
          </effect>
       </Button>
-      <Label fx:id="errorMsg" layoutX="52.0" layoutY="211.0" prefHeight="55.0" prefWidth="283.0" text="Error msg" />
+      <Label fx:id="errorMsg" layoutX="251.0" layoutY="271.0" prefHeight="55.0" prefWidth="283.0" text=" " />
    </children>
 </AnchorPane>

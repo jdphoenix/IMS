@@ -154,6 +154,12 @@ public class CustomerOverviewController {
 	        	alert.showAndWait();
 	        }
 	    }
+	    
+	    @FXML
+	    private void handleLogout() {
+	    	// may want to show a dialog confirmation box first
+	    	mainApp.showPortalView();
+	    }
 
 	    /**
 	     * Is called by the main application to give a reference back to itself.

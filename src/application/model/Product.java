@@ -22,6 +22,7 @@ public class Product {
 	private final IntegerProperty quantity;
 	private final FloatProperty price;
 	private final BooleanProperty status;
+	private final StringProperty description;
 
 	// default constructor
 
@@ -34,10 +35,13 @@ public class Product {
 		this.productID = new SimpleIntegerProperty(productID);
 		this.name = new SimpleStringProperty(name);
 
-		this.quantity = new SimpleIntegerProperty(0);
-		this.price = new SimpleFloatProperty(0.0f);
+		this.quantity = new SimpleIntegerProperty(100);
+		this.price = new SimpleFloatProperty(9.99f);
 		this.status = new SimpleBooleanProperty(false);
-
+		this.description = new SimpleStringProperty("Insert product description here, Insert product description here, "
+				+ "Insert product description here, Insert product description here, Insert product description here, "
+				+ "Insert product description here, Insert product description here, Insert product description here, "
+				+ "Insert product description here, Insert product description here, Insert product description here, ");
 	}
 
 	// ID //
@@ -104,5 +108,19 @@ public class Product {
 	public BooleanProperty statusProperty() {
 		return status;
 	}
+
+	// description //
+	public String getDescription() {
+		return description.get();
+	}
+
+	public void setDescription(String desc) {
+		this.description.set(desc);
+	}
+
+	public StringProperty descriptionProperty() {
+		return description;
+	}
+
 
 }
